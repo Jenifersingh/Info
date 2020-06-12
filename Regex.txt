@@ -1,0 +1,22 @@
+Lookahead
+  Negative Lookahead
+    e(?!x) -------> List of 'e' not followed by 'x'
+  Positive Lookahead
+    e(?=x) -------> List of 'e' followed by 'x'
+
+Lookbehind
+  Negative Lookbehind
+    (?<!e)x ------> List of 'x' not after 'e'
+  Positive Lookbehind
+    (?<=e)x ------> List of 'x' after 'e'
+    
+\b\w+(?<=x)\b ------> List of words endswith 'x'
+
+\b\w+(?<!x)\b ------> List of words not endswith 'x'
+
+[] -------> Anything inside square brackets are considered as 'or' condition
+[a9z] --------> It is considered as 'a' or '9' or 'z'
+[a-zA-Z0-9] --------> ('a' to 'z') or ('A' to 'Z') or ('0' to '9')
+
+() --------> Anything inside parenthesis will be considered as 'and' condition
+
