@@ -1,0 +1,38 @@
+Built in Libraries:
+  1. OperatingSystem
+  2. Dialogs
+  3. String
+  4. XML
+  5. Process
+  6. Collection 
+  7. DateTime
+  8.ScreenShot
+  
+Official Site:
+  https://robotframework.org/
+  
+Sections in RF Script:
+  *** Settings ***
+  *** Variable ***
+  *** Test Cases ***
+  *** Keywords ***
+  
+Precondition for Internet Explorer:
+  1. Need to remove the "Enable Protected Mode in Settings"
+     Settings >> Internet Options >> Security >> Uncheck Enable Protected Mode
+  2. The Browser zoom level should be exactly 100% not more larger or lesser
+  
+Mentioning Browser Driver Names:
+  1. Internet Explorer  ---   ie
+  2. Chrome             ---   chrome
+  3. Edge               ---   edge
+
+Extention of the robotframeworkscript:
+  .robot
+  
+Running robot script in terminal:
+  1. robot <FileName>
+      Generates the log files in the current working directory
+  2. robot -d <Directory> <FileName>
+      Generates the log files in the mentioned directory
+  
