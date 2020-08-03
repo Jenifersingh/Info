@@ -19,7 +19,7 @@ Sections in RF Script:
   
 Precondition for Internet Explorer:
   1. Need to remove the "Enable Protected Mode in Settings"
-     Settings >> Internet Options >> Security >> Uncheck Enable Protected Mode
+       Settings >> Internet Options >> Security >> Uncheck Enable Protected Mode
   2. The Browser zoom level should be exactly 100% not more larger or lesser
   
 Mentioning Browser Driver Names:
@@ -36,3 +36,28 @@ Running robot script in terminal:
   2. robot -d <Directory> <FileName>
       Generates the log files in the mentioned directory
   
+variable in command while execution:
+  robot <FileName> -v <VariableName>:<Value> <FilePath>
+  
+Running through Batch File:
+  echo off
+  call robot <FileName> -v <VariableName>:<Value> <FilePath>
+  
+  Save the file using .bat extension
+
+Running a single test Case:
+  robot -N <TestLogName> -t <TestCaseName1> -t <TestCaseName2> <FileName>
+        (OR)
+  In the script include the below line:
+   *** Settings ***
+  *** Variable ***
+  *** Test Cases ***
+  <TestCaseName>
+    [Tags]    <TagName>
+    {..
+    ..... <Keywords>
+    }
+  *** Keywords ***
+  
+  After that run the below line in the cmd
+  robot -N <TestLogName> -i <TagName1> -i <TagName2> <FileName>
