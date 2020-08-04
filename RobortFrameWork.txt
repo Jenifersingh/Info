@@ -61,3 +61,13 @@ Running a single test Case:
   
   After that run the below line in the cmd
   robot -N <TestLogName> -i <TagName1> -i <TagName2> <FileName>
+  
+Conditions
+  Given <KeywordName>
+  And <KeywordName>
+  When <KeywordName>
+  Then <KeywordName>
+  
+  This code will extecute the keywords in a conditional manner.
+  
+
