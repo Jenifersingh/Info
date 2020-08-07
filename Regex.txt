@@ -20,3 +20,4 @@ Lookbehind
 
 () --------> Anything inside parenthesis will be considered as 'and' condition
 
+xyz?(?=abc)  ----------> From xyz to abc
